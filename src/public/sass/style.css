@@ -1,0 +1,24 @@
+body {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6dd5ed), to(#2193b0));
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+img.PhotoMain {
+  margin-top: 100px;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+div.mainbox1 {
+  min-height: calc(100vh - 69px - 300px);
+}
+
+div.mainbox3 {
+  min-height: calc(100vh - 113px);
+}
+/*# sourceMappingURL=style.css.map */

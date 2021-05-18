@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links  -->
+    <%- include ('partials/head.html') %>
+    
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title> <%= titulo %> </title>
+
+</head>
+
+<body>
+   <!-- Nvar de partials -->
+    <%- include ('partials/navigation.html') %>
+    
+    <div class="container mainbox1">
+        <header class="row">
+            <div class="col-lg-12 text-center photoFlex">
+                <img class="PhotoMain animate__animated animate__bounceIn" src="/image/FotoPerfil.jpg" alt="PhotoPerfil">
+            </div>
+        </header>
+    </div>
+
+    <div class="container-fluid" id="about">
+        <div class="row bg-dark text-white p-5 text-center">
+            <div class="col-sm-6">
+                <i class="far fa-address-card fa-10x"></i>
+            </div>
+            <div class="col-sm-6">
+                <h3>What's the page for?</h3>
+                <p>I'm building the page, for create new Cv with my tools Js,NodeJs,Express and Sass.
+                    in my page i'll show my works and proyects, where everyone can see my them.</p>
+                <p>Email:<a href="mailto:"> Essaul.pr@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <%- include ('partials/footer.html') %>
+    <!-- Scripts Js -->
+    <%- include ('partials/scripts.html') %>
+
+</body>
+
+</html>

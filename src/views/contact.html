@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links  -->
+    <%- include ('partials/head.html') %>
+
+    <title> <%= titulo %> </title>
+
+</head>
+
+<body>
+   <!-- Nvar de partials -->
+    <%- include ('partials/navigation.html') %>
+
+    <div class="container p-5 mainbox3">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card animate__animated animate__flipInY">
+                    <div class="header bg-dark text-white text-center">
+                        <h3>Contact me</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Menssage"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+                                    Send menssage
+                                  </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Menssage</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Are you sure the menssage is correct? 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Scripts Js -->
+    <%- include ('partials/scripts.html') %>
+    <%- include ('partials/footer.html') %>
+</body>
+
+</html>
