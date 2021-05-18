@@ -10,7 +10,7 @@ var servidor = express();
 
 // Settings
 // Con set le insertamos el puerto con el que abriremos el local
-servidor.set('port', 5000);
+// servidor.set('port', 5000);
 servidor.engine('html', require('ejs').renderFile);
 servidor.set('view engine', 'ejs');
 servidor.set('views', path.join(__dirname, 'views'));
